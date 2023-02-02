@@ -25,7 +25,7 @@ body {
 }
 
 .left-login > h1 {
-    color: aquamarine;
+    color: rgb(96, 255, 87);
 }
 
 .right-lofin {
@@ -38,5 +38,27 @@ body {
 
 .card-login {
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #00ff37;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
 }
 
