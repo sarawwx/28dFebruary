@@ -2,8 +2,13 @@
 
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .main {
@@ -33,7 +38,7 @@ body {
     width: 35vw;
 }
 
-.right-lofin {
+.right-login {
     width: 50vh;
     height: 100vh;
     display: flex;
@@ -106,5 +111,36 @@ body {
     box-shadow: 0 10px 40px -12px #00ff8052;
 }
 
+/* RESPONSIVIDADE */
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+        margin: 50px;
+    }
+}
 
+@media only screen and (max-width: 650px) {
+    .main {
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
 
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-img {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
