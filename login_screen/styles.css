@@ -25,7 +25,12 @@ body {
 }
 
 .left-login > h1 {
+    font-size: 3vw;
     color: rgb(96, 255, 87);
+}
+
+.left-login-img {
+    width: 35vw;
 }
 
 .right-lofin {
@@ -100,4 +105,6 @@ body {
     cursor: pointer;
     box-shadow: 0 10px 40px -12px #00ff8052;
 }
+
+
 
