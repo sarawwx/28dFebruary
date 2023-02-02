@@ -9,4 +9,18 @@
 body {
     height: 100vh;
     background: linear-gradient(120deg, #7f16ffd8, #996dffd8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
 }
