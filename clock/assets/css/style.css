@@ -6,3 +6,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #7f16ffd8, #996dffd8);
+}
