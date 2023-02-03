@@ -64,3 +64,20 @@ html, body {
     letter-spacing: 2px;
     transition: .5s ease;
 }
+
+#home .container .left {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home .container .right {
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
