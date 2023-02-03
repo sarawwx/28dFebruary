@@ -1,75 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   
     <link rel="shortcut icon" href="./img/planets-logo.png">
-
-    <!-- project 3 -->
-    <title>planets</title>
+    
+    <title>space</title>
 </head>
 
 <body>
-    <header id="home" class="max-width">
-        <div class="menu">
-            <div class="logo">
-                <img src="./img/planets-logo.png" alt="">
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <img src="./img/logo.png" class="logo-main" />
+            <div class="navigation">
+                <a href="#home">home</a>
+                <a href="#">search</a>
+                <img src="./img/logo.png" class="logo-header" />
+                <a href="#">observatory</a>
+                <a href="#">contact</a>
             </div>
-            <div class="menu-desktop">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Observatory</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <div class="left">
-                <h1>Planet - <span>astronomy department</span></h1>
-                <button>Welcome</button>
-            </div>
-            <div class="right">
-                <img src="./img/astronaut.svg" class="image-intro" alt="" id="animation">
-            </div>
-        </div>
-    </header>
-    <main>
-        <section id="search" class="max-width">
-            <div class="title">
-                <h1>search</h1>
-            </div>
-            <div class="container">
-                <div class="left">
-                    <img src="./img/stars.svg" alt="">
-                </div>
-                <div class="right">
-                    <h3>star clusters and remnants</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi dolorum, amet nulla ea, voluptate maiores maxime provident sunt eum reiciendis 
-                        autem quasi voluptatibus ducimus dicta quis excepturi impedit. Quae, cumque.
-                    </p>
-                </div>
-            </div>
-            <div class="call">
-                <h1>astrology seminars</h1>
-                <p>Meeting at Zoom via link sent to subscribers' email, every wednesday 6:00p.m.</p>
-            </div>
-        </section>
-        <section id="observatory" class="max-width">
-            <div class="title">
-                <h1>observatory</h1>
-            </div>
-            <div class="container">
-                <p>a great celestial meeting is foreseen that will be able to be attended by the earth on tuesday</p>
-                <img src="./img/planets.svg" alt="">
-                <button>More</button>
-            </div>
-        </section>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
 
-    </main>
+        <div class="section01">
+            <div class="intro">
+                <div class="intro-text">
+                    <h2 class="intro-slogan">Planet - <span>astronomy department</span></h2>
+                    <a href="#" class="intro-btn">welcome</a>
+                </div>
+                <img class="img-intro" src="./img/astronaut.svg" />
+            </div>
+        </div>
+
+        <div class="section02">
+            <div class="search">
+                <h2 class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse quibusdam possimus quos error. 
+                    Quisquam laboriosam reiciendis eius tenetur, iure, itaque repellat eum error placeat quasi cumque exercitationem natus! 
+                    Facilis?
+                </h2>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --violet-dark: #29224C;
+    --white: #fff;
+    --lilac: #CE94FF;
+    --pink: #BB25FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: var(--violet-dark);
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--lilac);
+}
+
+header {
+    background: var(--lilac);
+    width: 100%;
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+}
+header .navigation a {
+    color: var(--pink);
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 0.9rem;
+    transition: 0.3s;
+    transition-property: color;
+}
+header .navigation a:hover {
+    color: var(--white);
+    text-decoration: overline;
+}
+
+.logo-header {
+    position: relative;
+    max-width: 6rem;
+    max-height: 9.375rem;
+    padding: 0 1rem;
+    width: auto;
+}
+
+.logo-main {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section01 {
+    max-width: 100%;
+    margin: 5rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro .intro-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .intro-text .intro-slogan {
+    color: var(--lilac);
+    font-size: 3.4375rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    line-height: 3.75rem;
+    margin-bottom: 10rem;
+    margin-right: 3rem;
+}
+
+.intro .intro-text .intro-btn {
+    color: var(--violet-dark);
+    background: var(--white);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 1.2rem;
+    width: 14rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+}
+.intro .intro-text .intro-btn:hover {
+    background: var(--pink);
+}
+
+.intro .img-intro {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.section02 {
+    width: 100%;
+    height: 50rem;
+    /* background: url(/img/bg1.jpg) no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section02 .search h2 {
+    background: #F6EEE0;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    width: 30rem;
+    height: 20rem;
+}
+
+
+@media (max-width: 1400px) {
+    .intro .intro-text {
+        width: 50%;
+    }
+
+    .intro .intro-text .intro-slogan {
+        margin-bottom: 3rem;
+        margin-right: 1rem;
+    }
+
+    .intro .intro-text .intro-btn {
+        margin-bottom: 4rem;
+    }
+
+    .intro .img-intro {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) {
+    header {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 4rem;
+    }
+
+    header .logo-main {
+        position: relative;
+        display: flex;
+        max-width: 4rem;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header label {
+        color: #EE8A26;
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+
+    header label .close-btn {
+        display: none;
+    }
+
+    header label .menu-btn {
+        position: relative;
+    }
+
+    header label:hover {
+        color: #5A6C37;
+    }
+
+    .logo-header {
+        display: none;
+    }
+
+    #check:checked~header .navigation {
+        z-index: 2;
+        position: fixed;
+        background: rgba(124, 180, 215, 0.97);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked~header .navigation a {
+        margin-bottom: 3rem;
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+    }
+
+    #check:checked~header label .menu-btn {
+        display: none;
+    }
+
+    #check:checked~header label .close-btn {
+        z-index: 3;
+        display: block;
+        position: relative;
+    }
+
+    .section01 .intro {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section01 .intro .intro-text {
+        align-items: center;
+        width: 100%;
+    }
+
+    .section01 .intro .intro-text .intro-slogan {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+    }
+
+    .section01 .intro .intro-text .intro-btn {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .section01 .intro .img-intro {
+        margin: auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 0.8rem 2rem;
+    }
+
+    #check:checked~header .navigation a {
+        font-size: 1.5rem;
+    }
+
+    .section01 {
+        margin: 2rem;
+    }
+
+    .section01 .intro .intro-text .intro-slogan {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .section01 .intro .intro-text .intro-btn {
+        font-size: 0.9rem;
+        width: 9rem;
+        margin-bottom: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .intro .img-intro {
+        width: 90%;
+    }
+
+    .section02 .search .info {
+        width: 20rem;
+        font-size: 1.2rem;
+        height: 21rem;
+    }
+}
