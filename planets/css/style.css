@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
+:root {
+    --violet-dark: #29224C;
+
+}
 
 * {
     margin: 0;
@@ -7,11 +11,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-}
 
-html, body {
-    height: 100%;
-    background: #303030;
+    background-color: var(--violet-dark);
 }
 
 .max-width {
@@ -29,7 +30,6 @@ html, body {
 #home {
     width: 100%;
     height: 80vh;
-    background: url(../img/bg-dark.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -74,6 +74,34 @@ html, body {
     flex-direction: column;
 }
 
+#home .container .left h1 {
+    color: white;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#home .container .left span {
+    font-weight: 400;
+}
+
+#home .container .left button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid #9F00FB;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#home .container .left button:hover {
+    background: #9F00FB;
+    color: #29224C;
+    font-weight: 400;
+}
+
 #home .container .right {
     width: 60%;
     height: 50vh;
@@ -81,3 +109,9 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+
+.image-main {
+    width: 50%;
+    object-fit: cover;
+}
+
