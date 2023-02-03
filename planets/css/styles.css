@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background: var(--lilac);
+    /* background: var(--lilac); */
     width: 100%;
     padding: 1rem 6rem;
     display: flex;
@@ -38,7 +38,7 @@ header .navigation {
     align-items: center;
 }
 header .navigation a {
-    color: var(--pink);
+    color: var(--white);
     font-weight: 800;
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -47,7 +47,7 @@ header .navigation a {
     transition-property: color;
 }
 header .navigation a:hover {
-    color: var(--white);
+    color: var(--pink);
     text-decoration: overline;
 }
 
@@ -136,16 +136,13 @@ section {
 .section02 {
     width: 100%;
     height: 50rem;
-    /* background: url(/img/bg1.jpg) no-repeat; */
-    /* background-size: cover; */
-    /* background-position: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .section02 .search h2 {
-    background: #F6EEE0;
+    background: var(--pink);
     text-align: center;
     margin: auto;
     padding: 2rem;
@@ -193,7 +190,7 @@ section {
     }
 
     header label {
-        color: #EE8A26;
+        color: var(--lilac);
         display: block;
         font-size: 2.5rem;
         cursor: pointer;
@@ -210,7 +207,7 @@ section {
     }
 
     header label:hover {
-        color: #5A6C37;
+        color: var(--pink);
     }
 
     .logo-header {
