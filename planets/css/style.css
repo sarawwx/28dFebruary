@@ -2,6 +2,9 @@
 
 :root {
     --violet-dark: #29224C;
+    --white: #fff;
+    --lilac: #CE94FF;
+    --pink: #BB25FF;
 
 }
 
@@ -18,13 +21,6 @@
 .max-width {
     max-width: 1420px;
     margin: 0 auto;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #home {
@@ -65,6 +61,13 @@
     transition: .5s ease;
 }
 
+#home .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #home .container .left {
     width: 40%;
     height: 50vh;
@@ -95,7 +98,6 @@
     cursor: pointer;
     transition: .3s ease;
 }
-
 #home .container .left button:hover {
     background: #9F00FB;
     color: #29224C;
@@ -110,8 +112,8 @@
     justify-content: center;
 }
 
-.image-main {
-    width: 50%;
+.image-intro {
+    width: 60%;
     object-fit: cover;
 }
 
