@@ -151,8 +151,10 @@ section {
 }
 
 .section03 .curiosities {
-    font-size: 100px;
+    color: var(--white);
+    font-size: 5rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .section03 .container {
