@@ -150,7 +150,35 @@ section {
     height: 20rem;
 }
 
+.section03 .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.card {
+    background: var(--lilac);
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/* .card-image {
+    background: var(--lilac);
+    height: 150px;
+    margin-bottom: 15px;
+} */
+
+
+
+
+
+
+
+
+/* responsiveness */
 @media (max-width: 1400px) {
     .intro .intro-text {
         width: 50%;
