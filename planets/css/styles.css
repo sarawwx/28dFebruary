@@ -150,6 +150,11 @@ section {
     height: 20rem;
 }
 
+.section03 .curiosities {
+    font-size: 100px;
+    text-align: center;
+}
+
 .section03 .container {
     display: flex;
     justify-content: center;
@@ -163,6 +168,18 @@ section {
     margin: 10px;
     border-radius: 20px;
     padding: 15px;
+}
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.card p {
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all .8s ease;
 }
 
 /* .card-image {
