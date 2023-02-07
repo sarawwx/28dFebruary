@@ -1,6 +1,6 @@
 :root {
     --white: #fff;
-    --lilac: #D8AFFF;
+    --rose: #BB82A1;
     --black-light-50: rgb(32, 32, 32);
     --black-light-100: rgb(17, 17, 17);
     --black-dark: #000;
@@ -18,7 +18,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
     background: url(./img/bg.png) no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -64,8 +66,8 @@ body {
 
 .container .card .content h2 {
     position: absolute;
-    top: -80px;
-    right: 30px;
+    top: -62px;
+    right: 20px;
     font-size: 8rem;
     color: rgba(14, 4, 4, 0.12);
     pointer-events: none;
@@ -89,8 +91,9 @@ body {
     padding: 8px 20px;
     margin-top: 15px;
     font-weight: 500;
+    text-decoration: none;
 
-    background: var(--lilac);
+    background: var(--rose);
     color: var(--black-dark);
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
