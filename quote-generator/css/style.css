@@ -88,3 +88,13 @@ body {
     margin: 6px;
     cursor: pointer;
 }
+
+.quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+/* .quote-box button:hover {
+
+} */
