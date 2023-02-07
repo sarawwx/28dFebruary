@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(37, 35, 35);
+    background: url(./img/bg.png) no-repeat;
 }
 
 .container {
