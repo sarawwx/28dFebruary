@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body {
@@ -19,4 +20,49 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 20 0px rgba(0, 0, 0, .15);
+}
+
+.quote-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(52, 0, 196);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 1.5rem;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(52, 0, 196);
+    position: absolute;
+    top: 50%;
+    left: -30px;
 }
