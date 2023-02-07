@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     border-radius: 15px;
     box-shadow: 20px 20px 50px rgb(0, 0, 0, .5);
     background: rgba(255, 255, 255, .1);
@@ -40,3 +40,16 @@ body {
     border-top: 1px solid rgba(255, 255, 255, .5);
     border-left: 1px solid rgba(255, 255, 255, .5);
 }
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s;
+}
+.container .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
