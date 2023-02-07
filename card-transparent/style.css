@@ -1,3 +1,11 @@
+:root {
+    --white: #fff;
+    --lilac: #D8AFFF;
+    --black-light-50: rgb(32, 32, 32);
+    --black-light-100: rgb(17, 17, 17);
+    --black-dark: #000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -59,19 +67,19 @@ body {
     top: -80px;
     right: 30px;
     font-size: 8rem;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(14, 4, 4, 0.12);
     pointer-events: none;
 }
 
 .container .card .content h3 {
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--black-light-100);
     z-index: 1;
 }
 
 .container .card .content p {
     font-size: 1rem;
-    color: #fff;
+    color: var(--black-light-50);
     font-weight: 300;
 }
 
@@ -82,10 +90,8 @@ body {
     margin-top: 15px;
     font-weight: 500;
 
-    background: #fff;
-    color: #000;
+    background: var(--lilac);
+    color: var(--black-dark);
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
 }
-
-
