@@ -27,7 +27,6 @@ body {
     margin-bottom: 40px;
     position: relative;
 }
-
 .quote-box h2::after {
     content: '';
     width: 75px;
@@ -44,7 +43,6 @@ body {
     font-size: 1.5rem;
     min-height: 110px;
 }
-
 .quote-box blockquote::before,
 .quote-box blockquote::after {
     content: '"';
@@ -56,7 +54,6 @@ body {
     float: right;
     position: relative;
 }
-
 .quote-box span::before {
     content: '';
     width: 20px;
@@ -88,12 +85,12 @@ body {
     margin: 6px;
     cursor: pointer;
 }
+.quote-box button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    transition: all 300ms ease;
+}
 
 .quote-box button img {
     width: 20px;
     margin-right: 10px;
 }
-
-/* .quote-box button:hover {
-
-} */
