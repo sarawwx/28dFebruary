@@ -2,3 +2,10 @@
     --purple: #41045B;
     --lilac: #A085EC;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
