@@ -6,6 +6,7 @@ the vanilla-tilt.js library was used for the reflection and movement animation o
 (https://micku7zu.github.io/vanilla-tilt.js/)
 
 
-<p align="center"> 
+<p align="center">
+    <sub> project 07 </sub>
     <img src= "./img/gt-cards.gif" />
 </p>
