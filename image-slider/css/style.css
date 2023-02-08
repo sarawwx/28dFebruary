@@ -1,6 +1,7 @@
 :root {
     --purple: #41045B;
     --lilac: #A085EC;
+    --blue-light-50: #C2D4E5;
 }
 
 *{
@@ -8,4 +9,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--blue-light-50);
+}
+
+.wrapper{
+    max-width: 1200px;
+}
+
+.wrapper .carousel{
+    white-space: nowrap;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    width: calc(100% / 3);
 }
