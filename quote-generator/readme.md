@@ -2,6 +2,7 @@
 
 i'm practicing HTML, CSS and Javascript - in this project: 
 quote generator
+<br>
 i used [tweet button](https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview) for quote post function
 
 <p align="center"> 
