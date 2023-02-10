@@ -73,3 +73,15 @@ p {
     font-weight: 300;
     line-height: 15px;
 }
+
+button {
+    width: 190px;
+    color: #000;
+    font-size: 0.8rem;
+    padding: 12px 0;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
