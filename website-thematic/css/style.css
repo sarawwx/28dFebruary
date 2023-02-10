@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'open sans', sans-serif;
 }
 
 .container {
@@ -49,4 +49,27 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.4rem;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 10rem;
+    font-weight: 300;
+}
+
+p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 15px;
 }
