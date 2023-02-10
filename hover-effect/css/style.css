@@ -52,8 +52,8 @@ body {
     transition-property: opacity;
 }
 
-.image img:hover {
-    opacity: 1;
+.image:hover img {
+    opacity: 0.5;
 }
 
 .image .details {
@@ -99,7 +99,7 @@ body {
 
 .more {
     position: absolute;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .6);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -114,7 +114,7 @@ body {
 }
 
 .more .read-more {
-    color: #000;
+    color: var(--green-light-100);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -126,7 +126,7 @@ body {
 }
 
 .more .icon-links a{
-    color: #000;
+    color: var(--green-light-100);
     font-size: 1rem;
 }
 .more .icon-links a:not(:last-child) i {
@@ -134,16 +134,19 @@ body {
 }
 
 
-/* @media (max-width: 1600px) {
-    .image {
-        flex: 100%;
-        max-width: 480px;
+@media (max-width: 500px) {
+    .image .details h2 {
+        font-size: 2rem;
+        margin: 35px 0;
     }
-} */
 
-@media (max-width: 480px) {
     .image .details p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        margin: auto;
+    }
+
+    .more {
+        padding: 5px;
     }
 
     .more .read-more, .more .icon-links a i {
