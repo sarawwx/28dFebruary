@@ -85,3 +85,45 @@ button {
     outline: none;
     margin-top: 30px;
 }
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:  transform .5s;
+}
+
+.card1 {
+    background-image: url(../img/card1.jpg);
+}
+.card2 {
+    background-image: url(../img/card2.jpg);
+}
+.card3 {
+    background-image: url(../img/card3.jpg);
+}
+.card4 {
+    background-image: url(../img/card4.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow:  0 0 5px #999;
+    font-weight: 600;
+}
+
+.card p {
+    text-shadow:  0 0 5px #000;
+    font-size: 0.8rem;
+}
