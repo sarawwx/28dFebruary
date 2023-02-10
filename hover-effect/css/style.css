@@ -81,9 +81,13 @@ body {
 }
 .image:hover .details h2 {
     transform: translateY(-30px);
+    color: var(--green-light-100);
+    transition: .6s;
+    transition-property: color;
 }
 
 .image .details p {
+    color: var(--green-light-100);
     margin: 30px 30px 0 30px;
     font-size: 1.3rem;
     font-weight: 600;
