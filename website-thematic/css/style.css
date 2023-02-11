@@ -48,7 +48,17 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+}
+
+a {
+    text-transform: uppercase;
+    transition: background .6s;
+    padding: 6px 10px;
+    border-radius: 30px;
+}
+a:hover {
+    background: #000;
 }
 
 .row {
