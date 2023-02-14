@@ -1,35 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
+
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'open sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background: gray;
+    background: rgb(126, 203, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .max-width {
     max-width: 500px;
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     margin-top: 20px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 button {
-    padding: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.5rem;
     border: none;
-    font-size: 1.1em;
-    transition: all .5s;
-    cursor: pointer;
     border-radius: 25px;
+
+    cursor: pointer;
+    transition: all .5s;
 }
 button:hover {
-    background-color: #a1c0d1;
+    background-color: white;
 }
 
 .bg-green {
