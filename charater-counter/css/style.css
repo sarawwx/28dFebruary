@@ -12,3 +12,12 @@ body {
     align-items: center;
     background: rgb(195, 158, 255);
 }
+
+.container {
+    background: rgb(96, 72, 174);
+    width: 400px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(44, 32, 98, .7);
+}
