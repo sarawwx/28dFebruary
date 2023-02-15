@@ -4,3 +4,9 @@ body {
     height: 100vh;
     background-color: black;
 }
+
+span {
+    background: url("https://cdn-icons-png.flaticon.com/512/210/210545.png");
+    width: 100px;
+    height: 100;
+}
