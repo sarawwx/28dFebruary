@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(124, 200, 136);
 }
 
 span {
@@ -17,6 +17,8 @@ span {
     transform: translate(-50%, -50%);
     animation: animate 6s linear;
 }
+
+
 @keyframes animate {
     0%{
         transform: translate(-50%, -50%);
