@@ -37,13 +37,14 @@
     height: 550px;
     width: 550px;
     position: fixed;
-    border: 1px solid;
+    /* border: 1px solid; */
     left: 50%;
+    border-radius: 20px;
     transform: translateX(-50%);
-    background: rgba(60, 35, 129, 0.7);
+    background: rgba(255, 89, 0, 0.7);
     top: 50px;
     transition: all 1s;
-    box-shadow: 0px 0px 10px #7049ff;
+    box-shadow: 0px 0px 20px #7049ff;
 }
 
 button {
