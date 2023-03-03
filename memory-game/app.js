@@ -50,4 +50,38 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'img/icecream.jpg'
         }
     ]
+
+    const grid = document.querySelector('.grid')
+    var cardsChosen = []
+    var cardsChosenId = []
+
+    function createBoard() {
+        for (let i = 0; i < cardArray.length; i++) {
+            var card = document.createElement('img')
+            card.setAttribute('scr', 'img/blank.jpg')
+            card.setAttribute('data-id', i)
+            // card.addEventListener('click', flipCard)
+            grid.appendChild(card)
+        }
+    }
+
+
+// flip card function
+    function flipCard() {
+        var cardId = this.getAttibute('data-id')
+        cardsChosen.push(cardArray[cardId].name)
+        cardsChosenId.push(cardId)
+        this.setAttribute('scr', cardArray[cardId].img)
+        if (cardsChosen.length === 2) {
+            setTimeout(checkForMatch, 500)
+        }
+    }
+
+
+    createBoard()
+
+
+
+
+
 })
