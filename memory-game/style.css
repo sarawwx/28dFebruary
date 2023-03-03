@@ -1,6 +1,29 @@
+* {
+    background: url(./img/white.jpg);
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #5F1AE5;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
+    padding: 30px 100px;
     height: 400px;
     max-width: 300px;
 }
