@@ -54,11 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid')
     var cardsChosen = []
     var cardsChosenId = []
+    var cardsWon = []
 
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('scr', 'img/blank.jpg')
+            card.setAttribute('src', 'img/blank.jpg')
             card.setAttribute('data-id', i)
             // card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -66,12 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    function checkForMatch() {
+        var cards = document.querySelectorAll('img')
+        const optionOneId = cardsChosenId[0]
+        const optionTwoId = cardsChosenId[1]
+        if ( cardsChosen[0] === cardsChosen[1]) {
+            alert('you found a match')
+            cards[optionOneId].setAttribute('src', 'img/white.jpg')
+            cards[optionTwoId].setAttribute('src', 'img/white.jpg')
+            cardsWon.push(cardsChosen)
+            } else {
+                cards[optionOneId].setAttribute('src', 'img/blank.jpg')
+                cards[optionTwoId].setAttribute('src', 'img/blank.jpg')
+                alert('sorry, try again')
+            }
+    }
+
 // flip card function
     function flipCard() {
         var cardId = this.getAttibute('data-id')
         cardsChosen.push(cardArray[cardId].name)
         cardsChosenId.push(cardId)
-        this.setAttribute('scr', cardArray[cardId].img)
+        this.setAttribute('src', cardArray[cardId].img)
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500)
         }
